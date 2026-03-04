@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shristee Maharjan - Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu Toggle Button -->
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar__close" id="closeBtn" aria-label="Close navigation menu">
+      <span>&times;</span>
+    </button>
+    <h1 class="sidebar__name">Shristee Maharjan</h1>
+    <nav class="sidebar__nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="page-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="page-link" data-page="about">About</a></li>
+        <li class="active"><a href="projects.html" class="page-link" data-page="projects">Projects</a></li>
+        <li><a href="skills.html" class="page-link" data-page="skills">Skills</a></li>
+        <li><a href="contact.html" class="page-link" data-page="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__socials">
+      <a href="#" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      <a href="#" aria-label="GitHub"><img src="images/github.png" alt="GitHub"></a>
+      <a href="mailto:shristee.maharjan@gmail.com" aria-label="Email"><img src="images/email.png" alt="Email"></a>
+    </div>
+  </aside>
+
+  <main class="content projects-page">
+    <div class="page-header">My Projects</div>
+
+    <div class="project-grid">
+      <a href="#" class="project-card">
+        <div class="proj-img"></div>
+        <h4>VolleyWatch – Volleyball Play Detection and Analysis using VideoMAE and YOLO</h4>
+      </a>
+      <a href="#" class="project-card">
+        <div class="proj-img"></div>
+        <h4>Satellite-Based Landslide Detection using Deep Learning</h4>
+      </a>
+      <a href="#" class="project-card">
+        <div class="proj-img"></div>
+        <h4>Weather Observation Station – PHP &amp; SQLite</h4>
+      </a>
+      <a href="#" class="project-card">
+        <div class="proj-img"></div>
+        <h4>Snap-Catch – A game using C++</h4>
+      </a>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shristee Maharjan - Portfolio</n  ></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu Toggle Button -->
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar__close" id="closeBtn" aria-label="Close navigation menu">
+      <span>&times;</span>
+    </button>
+    <h1 class="sidebar__name">Shristee Maharjan</h1>
+    <nav class="sidebar__nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home" class="page-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="page-link" data-page="about">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__socials">
+      <a href="#" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      <a href="#" aria-label="GitHub"><img src="images/github.png" alt="GitHub"></a>
+      <a href="shristee.maharjan@gmail.com" aria-label="Email"><img src="images/email.png" alt="Email"></a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section id="home" class="hero">
+      <h2 class="hero__name">Shristee Maharjan</h2>
+      <p class="hero__subtitle">
+        Machine Learning &amp; Data Science Enthusiast | Aspiring Computer
+        Engineer
+      </p>
+      <p class="hero__description">
+        Tech enthusiast and Machine Learning learner with experience in
+        organizing tech communities, building AI projects, and mentoring young
+        learners through STEAM education.
+      </p>
+      <div class="hero__location">
+       <img src="images/location.png" alt="Location" style="height:1em; width:auto; vertical-align:middle;">
+        <span>Kathmandu, Nepal</span>
+      </div>
+      ...............................................................................................................................................................................................................................................
+      <a href="about.html" class="btn btn--primary">More About Me &rarr;</a>
+    </section>
+    <div class="section-divider"></div>
+    <section id="projects" class="projects">
+      <h3>Recent Projects</h3>
+      <div class="projects__list">
+        <article class="project-card">
+          <img src="images/project1.png" alt="VolleyWatch project image" />
+          <h4>
+            VolleyWatch-Volleyball Play Detection and Analysis using VideoMAE
+            and YOLO
+          </h4>
+        </article>
+        <article class="project-card">
+          <img
+            src="images/project2.png"
+            alt="Landslide detection project image"
+          />
+          <h4>
+            Satellite-Based Landslide Detection using Deep Learning
+          </h4>
+        </article>
+      </div>
+      <a href="projects.html" class="btn btn--secondary">View All Projects &rarr;</a>
+    </section>
+    <div class="section-divider"></div>
+    <section id="skills" class="technologies">
+      <h3>Technology Used</h3>
+      <div class="technologies__list">
+        <div class="tech-card">
+          <img src="images/python.png" alt="Python logo" />
+          <div>
+            <h4>Python</h4>
+            <p>Back-End Development</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/tensorflow.png" alt="TensorFlow logo" />
+          <div>
+            <h4>TensorFlow</h4>
+            <p>Machine Learning</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/pytorch.png" alt="PyTorch logo" />
+          <div>
+            <h4>PyTorch</h4>
+            <p>Machine Learning</p>
+          </div>
+        </div>
+      </div>
+      <a href="skills.html" class="btn btn--secondary">View All Technologies &rarr;</a>
+    </section>
+
+    <section id="about" class="about-page" style="display:none;">
+      <div class="about-header">
+        <h2 class="about-page__title">About Me</h2>
+        <p class="about-page__subtitle">ML/Data Science Enthusiast</p>
+        <p class="about-page__description">
+          Aspiring Computer Engineer and Machine Learning/Data Science enthusiast with a strong foundation in programming, data analysis, and web development. Experienced in leadership and event management through active roles in national-level technical events and student societies. Passionate about leveraging ML and data-driven solutions to solve real-world problems.
+        </p>
+        <div class="about-location">
+          <img src="images/map-pin.svg" alt="Location" />
+          <span>Kathmandu, Nepal</span>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <section class="education">
+        <h3 class="section-title">
+          <img src="images/education.svg" alt="Education icon" class="section-icon" />
+          Education
+        </h3>
+        <div class="education-item">
+          <h4>Bachelors in Computer Engineering</h4>
+          <p class="college-name">Sagarmatha Engineering College</p>
+          <p class="affiliation">Tribhuvan University</p>
+          <p class="graduation-date">Expected Graduation in 2083 B.S. / 2025 A.D.</p>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="certifications">
+        <h3 class="section-title">
+          <img src="images/certificate.svg" alt="Certificate icon" class="section-icon" />
+          Online Certification
+        </h3>
+        <ul class="certification-list">
+          <li>
+            <span class="cert-bullet">■</span>
+            <a href="#" class="cert-link">Data Visualization</a>
+            <span class="cert-provider">Kaggle</span>
+            <a href="#" class="cert-view">Visit certificate</a>
+          </li>
+          <li>
+            <span class="cert-bullet">■</span>
+            <a href="#" class="cert-link">Intro to Deep Learning</a>
+            <span class="cert-provider">Kaggle</span>
+            <a href="#" class="cert-view">Visit certificate</a>
+          </li>
+          <li>
+            <span class="cert-bullet">■</span>
+            <a href="#" class="cert-link">Introducing to Generative AI with AWS</a>
+            <span class="cert-provider">Udacity</span>
+            <a href="#" class="cert-view">Visit certificate</a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="experience">
+        <h3 class="section-title">
+          <img src="images/work.svg" alt="Work icon" class="section-icon" />
+          Experience
+        </h3>
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="exp-header">
+              <h4>STEAM EDUCATOR</h4>
+              <span class="exp-org">Smart Cheli</span>
+            </div>
+            <p class="exp-dates">Nov 2025 – Present</p>
+          </div>
+          <div class="experience-item">
+            <div class="exp-header">
+              <h4>COESIS</h4>
+              <span class="exp-org">Sagarmatha Engineering College</span>
+            </div>
+            <div class="exp-roles">
+              <p>Public Relations Coordinator (Nov 2024 – Dec 2025)</p>
+              <p>Vice-President (Nov 2023 – Nov 2024)</p>
+              <p>Executive Member(Jun 2022 – Nov 2023)</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="exp-header">
+              <h4>Organizing Committee SECRETARY</h4>
+              <span class="exp-org">Sagarmatha Tech-Fest 2023</span>
+            </div>
+            <p class="exp-dates">Jun 2023 – Dec 2023</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    // Page navigation - toggle between home and about pages
+    const pageLinks = document.querySelectorAll('.page-link');
+    const homeSection = document.getElementById('home');
+    const projectsSection = document.getElementById('projects');
+    const skillsSection = document.getElementById('skills');
+    const aboutSection = document.getElementById('about');
+
+    function showPage(pageName) {
+      // Hide all sections
+      homeSection.style.display = 'none';
+      projectsSection.style.display = 'none';
+      skillsSection.style.display = 'none';
+      aboutSection.style.display = 'none';
+
+      // Show the appropriate page
+      if (pageName === 'home') {
+        homeSection.style.display = 'block';
+        projectsSection.style.display = 'block';
+        skillsSection.style.display = 'block';
+      } else if (pageName === 'about') {
+        aboutSection.style.display = 'block';
+      }
+
+      // Update active link styling
+      pageLinks.forEach(link => {
+        if (link.getAttribute('data-page') === pageName) {
+          link.parentElement.classList.add('active');
+        } else {
+          link.parentElement.classList.remove('active');
+        }
+      });
+    }
+
+    // Handle all page link clicks
+    pageLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const pageName = link.getAttribute('data-page');
+        showPage(pageName);
+      });
+    });
+
+    // Show home page by default
+    showPage('home');
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

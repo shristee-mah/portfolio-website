@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shristee Maharjan - Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu Toggle Button -->
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar__close" id="closeBtn" aria-label="Close navigation menu">
+      <span>&times;</span>
+    </button>
+    <h1 class="sidebar__name">Shristee Maharjan</h1>
+    <nav class="sidebar__nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="page-link" data-page="home">Home</a></li>
+        <li><a href="about.html" class="page-link" data-page="about">About</a></li>
+        <li><a href="projects.html" class="page-link" data-page="projects">Projects</a></li>
+        <li><a href="skills.html" class="page-link" data-page="skills">Skills</a></li>
+        <li class="active"><a href="contact.html" class="page-link" data-page="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__socials">
+      <a href="#" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      <a href="#" aria-label="GitHub"><img src="images/github.png" alt="GitHub"></a>
+      <a href="mailto:shristee.maharjan@gmail.com" aria-label="Email"><img src="images/email.png" alt="Email"></a>
+    </div>
+  </aside>
+
+  <main class="content contact-page">
+    <h2 class="page-header" style="color: #7e5656;">Let’s Connect</h2>
+
+    <div class="contact-grid">
+      <a class="contact-card linkedin" href="https://www.linkedin.com/in/shristee-maharjan-832330310" target="_blank" rel="noopener">
+        <img src="images/linkedin.png" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+
+      <a class="contact-card github" href="https://github.com/shristee-mah" target="_blank" rel="noopener">
+        <img src="images/github.png" alt="GitHub">
+        <span>Github</span>
+      </a>
+
+      <a class="contact-card gmail" href="mailto:shristee.maharjan2@gmail.com">
+        <img src="images/email.png" alt="Gmail">
+        <span>Gmail</span>
+      </a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
