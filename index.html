@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shristee Maharjan - Portfolio</n  ></title>
+  <title>Shristee Maharjan - Portfolio</title>
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+  
+  <!-- Top Navigation Bar -->
+  <header class="top-nav" id="topNav">
+    <nav class="nav-container">
+      <div class="nav-brand">
+        <h1>Shristee Maharjan</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link smooth-scroll">Home</a></li>
+        <li><a href="#about" class="nav-link smooth-scroll">About</a></li>
+        <li><a href="#projects" class="nav-link smooth-scroll">Projects</a></li>
+        <li><a href="#skills" class="nav-link smooth-scroll">Skills</a></li>
+        <li><a href="#contact" class="nav-link smooth-scroll">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <a href="https://www.linkedin.com/in/shristee-maharjan-832330310" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/shristee-mah" aria-label="GitHub"><img src="images/github.png" alt="GitHub"></a>
+        <a href="mailto:shristee.maharjan@gmail.com" aria-label="Email"><img src="images/gmail.png" alt="Email"></a>
+      </div>
+    </nav>
+  </header>
+
   <!-- Menu Toggle Button -->
   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span>
@@ -49,7 +73,7 @@
   </aside>
 
   <main class="content">
-    <section id="home" class="hero">
+    <section id="home" class="hero fade-in">
       <h2 class="hero__name">Shristee Maharjan</h2>
       <p class="hero__subtitle">
         Machine Learning &amp; Data Science Enthusiast | Aspiring Computer
@@ -64,41 +88,97 @@
        <img src="images/location.png" alt="Location" style="height:1em; width:auto; vertical-align:middle;">
         <span>Kathmandu, Nepal</span>
       </div>
-      ...............................................................................................................................................................................................................................................
+      
+    </section>
+    <div class="section-divider"></div>
+    <section id="about" class="about slide-up">
+      <h3>About Me</h3>
+      <div class="about__container">
+        <div class="about__description">
+         <p>I’m Shristee Maharjan, and I enjoy working with machine learning and data to build things that actually solve real problems. I have a background in programming, data analysis, and web development, but what I really like is turning ideas into something real and usable.</p>
+          <br
+         <p>Outside of technical work, I’ve been involved in organizing tech events and working with student communities, which has helped me grow in leadership and teamwork. I also enjoy participating in hackathons and tech-events to challenge myself and learn new skills.</p>
+          <br
+         <p>I’d describe myself as someone who likes to explore whether that's new technologies, ideas, or challenges. I’m still learning, still improving, and that’s something I genuinely enjoy.</p>
+        </div>
+        <div class="about__content">
+          <article class="about__content-item">
+           <h4>5+ Projects</h4> 
+          </article>
+          <article class="about__content-item">
+           <h4>20+ technologies</h4> 
+          </article>
+          <article class="about__content-item">
+           <h4>5+ certifications</h4> 
+          </article>
+          <article class="about__content-item">
+           <h4>2+ Hackathon Participations</h4> 
+          </article>
+          <article class="about__content-item">
+           <h4>4+ years of Leadership Experience</h4> 
+          </article>
+        </div>
+      </div>
       <a href="about.html" class="btn btn--primary">More About Me &rarr;</a>
     </section>
     <div class="section-divider"></div>
-    <section id="projects" class="projects">
-      <h3>Recent Projects</h3>
+    <section id="projects" class="projects slide-up">
+      <h3>Projects</h3>
       <div class="projects__list">
         <article class="project-card">
-          <img src="images/project1.png" alt="VolleyWatch project image" />
-          <h4>
-            VolleyWatch-Volleyball Play Detection and Analysis using VideoMAE
-            and YOLO
-          </h4>
+          <h4>Nischit: Transparent Subsidy Distribution System using Blockchain</h4>
+          <p class="project-description">
+            <strong>Tools:</strong> Solidity, Ethereum, React, Node.js, Next.js<br>
+            Blockchain-based system ensuring transparent and tamper-proof subsidy distribution.
+          </p>
         </article>
         <article class="project-card">
-          <img
-            src="images/project2.png"
-            alt="Landslide detection project image"
-          />
-          <h4>
-            Satellite-Based Landslide Detection using Deep Learning
-          </h4>
+          <h4>Satellite-Based Landslide Detection using Deep Learning</h4>
+          <p class="project-description">
+            <strong>Tools:</strong> Python, Tensorflow, Streamlit<br>
+            U-Net model for landslide detection using Sentinel-2 imagery with enhanced results.
+          </p>
+        </article>
+        <article class="project-card">
+          <h4>Weather Observation Station</h4>
+          <p class="project-description">
+            <strong>Tools:</strong> PHP & SQLite<br>
+            Local weather data management system with registration, search, and filtering capabilities.
+          </p>
+        </article>
+        <article class="project-card">
+          <h4>Snap-Catch</h4>
+          <p class="project-description">
+            <strong>Tools:</strong> C++<br>
+            Interactive ball-catching game with enhanced gameplay logic and user-friendly interface.
+          </p>
+        </article>
+        <article class="project-card">
+          <h4>VolleyWatch - Volleyball Play Detection and Analysis</h4>
+          <p class="project-description">
+            <strong>Tools:</strong> Python, VideoMAE, YOLO, OpenCV<br>
+            Computer vision system for automatic volleyball play detection and analysis.
+          </p>
         </article>
       </div>
-      <a href="projects.html" class="btn btn--secondary">View All Projects &rarr;</a>
+      <a href="projects.html" class="btn btn--secondary">Explore Complete Portfolio &rarr;</a>
     </section>
     <div class="section-divider"></div>
-    <section id="skills" class="technologies">
+    <section id="skills" class="technologies slide-up">
       <h3>Technology Used</h3>
       <div class="technologies__list">
         <div class="tech-card">
           <img src="images/python.png" alt="Python logo" />
           <div>
             <h4>Python</h4>
-            <p>Back-End Development</p>
+            <p>Programming & Machine Learning</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/pytorch.png" alt="PyTorch logo" />
+          <div>
+            <h4>PyTorch</h4>
+            <p>Machine Learning</p>
           </div>
         </div>
         <div class="tech-card">
@@ -109,14 +189,140 @@
           </div>
         </div>
         <div class="tech-card">
-          <img src="images/pytorch.png" alt="PyTorch logo" />
+          <img src="images/pandas.png" alt="Pandas logo" />
           <div>
-            <h4>PyTorch</h4>
+            <h4>Pandas</h4>
+            <p>Data Analysis & Manipulation</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/numpy.png" alt="NumPy logo" />
+          <div>
+            <h4>NumPy</h4>
+            <p>Numerical Computing</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/scikit.png" alt="scikit-learn logo" />
+          <div>
+            <h4>scikit-learn</h4>
             <p>Machine Learning</p>
           </div>
         </div>
+        <div class="tech-card">
+          <img src="images/opencv.png" alt="OpenCV logo" />
+          <div>
+            <h4>OpenCV</h4>
+            <p>Computer Vision</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/streamlit.png" alt="Streamlit logo" />
+          <div>
+            <h4>Streamlit</h4>
+            <p>ML Application Deployment</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/php.png" alt="PHP logo" />
+          <div>
+            <h4>PHP</h4>
+            <p>Backend Web Development</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/cpp.png" alt="C++ logo" />
+          <div>
+            <h4>C++</h4>
+            <p>Object-Oriented Programming</p>
+          </div>
+        </div>
+        <!-- <div class="tech-card">
+          <img src="images/html.png" alt="HTML logo" />
+          <div>
+            <h4>HTML5</h4>
+            <p>Frontend Development</p>
+          </div> -->
+        <!-- </div>
+        <div class="tech-card">
+          <img src="images/css.png" alt="CSS logo" />
+          <div>
+            <h4>CSS3</h4>
+            <p>Frontend Styling</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/javascript.png" alt="JavaScript logo" />
+          <div>
+            <h4>JavaScript</h4>
+            <p>Frontend Programming</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/react.png" alt="React logo" />
+          <div>
+            <h4>React</h4>
+            <p>Frontend Framework</p>
+          </div>
+        </div>
+        <div class="tech-card">
+          <img src="images/nodejs.png" alt="Node.js logo" />
+          <div>
+            <h4>Node.js</h4>
+            <p>Backend Runtime</p>
+          </div>
+        </div>-->
+        <div class="tech-card">
+          <img src="images/github.png" alt="Git logo" />
+          <div>
+            <h4>Git</h4>
+            <p>Version Control</p>
+          </div>
+        </div> 
+        <div class="tech-card">
+          <img src="images/mysql.png" alt="MySQL logo" />
+          <div>
+            <h4>MySQL</h4>
+            <p>Database Management</p>
+          </div>
+        </div>
       </div>
-      <a href="skills.html" class="btn btn--secondary">View All Technologies &rarr;</a>
+      <a href="skills.html" class="btn btn--secondary">Discover Full Tech Stack &rarr;</a>
+    </section>
+    <div class="section-divider"></div>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact slide-up">
+      <h3>Let's Connect</h3>
+      <div class="contact__container">
+        <div class="contact__info">
+          <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+          <div class="contact__details">
+            <div class="contact__item">
+              <img src="images/email.png" alt="Email" />
+              <span>shristee.maharjan@gmail.com</span>
+            </div>
+            <div class="contact__item">
+              <img src="images/location.png" alt="Location" />
+              <span>Kathmandu, Nepal</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact__socials">
+          <h4>Connect With Me</h4>
+          <div class="contact__social-links">
+            <a href="https://www.linkedin.com/in/shristee-maharjan-832330310" target="_blank" aria-label="LinkedIn">
+              <img src="images/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/shristee-mah" target="_blank" aria-label="GitHub">
+              <img src="images/github.png" alt="GitHub" />
+            </a>
+            <a href="mailto:shristee.maharjan@gmail.com" aria-label="Email">
+              <img src="images/gmail.png" alt="Email" />
+            </a>
+          </div>
+                  </div>
+      </div>
     </section>
 
     <section id="about" class="about-page" style="display:none;">

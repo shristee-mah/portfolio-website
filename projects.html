@@ -12,6 +12,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Top Navigation Bar -->
+  <header class="top-nav" id="topNav">
+    <nav class="nav-container">
+      <div class="nav-brand">
+        <h1>Shristee Maharjan</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <a href="https://www.linkedin.com/in/shristee-maharjan-832330310" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/shristee-mah" aria-label="GitHub"><img src="images/github.png" alt="GitHub"></a>
+        <a href="mailto:shristee.maharjan@gmail.com" aria-label="Email"><img src="images/gmail.png" alt="Email"></a>
+      </div>
+    </nav>
+  </header>
+
   <!-- Menu Toggle Button -->
   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span>
@@ -50,22 +71,63 @@
     <br>
 
     <div class="project-grid">
-      <a href="#" class="project-card">
-        <div class="proj-img"></div>
-        <h4>VolleyWatch – Volleyball Play Detection and Analysis using VideoMAE and YOLO</h4>
-      </a>
-      <a href="#" class="project-card">
-        <div class="proj-img"></div>
+      <div class="project-card">
+        <br>
+        <h4>Nischit: Transparent Subsidy Distribution System using Blockchain</h4>
+        <p class="project-description">
+          <strong>Tools:</strong> Solidity, Ethereum, React, Node.js, Next.js<br><br>
+          • Developed a blockchain-based system to ensure transparent and tamper-proof subsidy distribution<br>
+          • Implemented smart contracts to automate beneficiary verification and fund allocation<br>
+          • Built a web interface for users and administrators to track subsidy status in real time<br>
+          • Enhanced accountability and reduced corruption through decentralized data management
+        </p>
+        <a href="https://github.com/shristee-mah/Blockchain-Based-Transparent-Subsidy-Distribution" class="project-github-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <br>
         <h4>Satellite-Based Landslide Detection using Deep Learning</h4>
-      </a>
-      <a href="#" class="project-card">
-        <div class="proj-img"></div>
-        <h4>Weather Observation Station – PHP &amp; SQLite</h4>
-      </a>
-      <a href="#" class="project-card">
-        <div class="proj-img"></div>
-        <h4>Snap-Catch – A game using C++</h4>
-      </a>
+        <p class="project-description">
+          <strong>Tools:</strong> Python, Tensorflow, Streamlit<br><br>
+          • Built a U-Net model to detect and segment landslides using Sentinel-2 imagery<br>
+          • Improved results with augmentation and SBConv<br>
+          • Developed a website named Pahiro Pahichan using Streamlit<br>
+          • Run locally for real-time image upload and prediction visualization
+        </p>
+        <a href="https://github.com/shristee-mah/Satellite-Based-Landslide-Detection-using-Deep-Learning" class="project-github-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <br>
+        <h4>Weather Observation Station</h4>
+        <p class="project-description">
+          <strong>Tools:</strong> PHP & SQLite<br><br>
+          • Developed a local weather data management system using SQLite<br>
+          • Added registration, search and filtering with preloaded sample weather stations<br>
+          • Enabled distance calculation between selected stations
+        </p>
+        <a href="https://github.com/shristee-mah/DBMS--Weather-Observation-Station" class="project-github-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <br>
+        <h4>Snap-Catch</h4>
+        <p class="project-description">
+          <strong>Tools:</strong> C++<br><br>
+          • Developed an interactive ball-catching game using C++ programming<br>
+          • Created a user-friendly app with enhanced gameplay logic<br>
+          • Improved user experience through efficient algorithms
+        </p>
+        <a href="https://github.com/shristee-mah/Snap-Catch-O" class="project-github-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <br>
+        <h4>VolleyWatch - Volleyball Play Detection and Analysis using VideoMAE and YOLO</h4>
+        <p class="project-description">
+          <strong>Tools:</strong> Python, VideoMAE, YOLO, OpenCV<br><br>
+          • Built a computer vision system for automatic volleyball play detection and analysis<br>
+          • Implemented advanced deep learning models for accurate play recognition<br>
+          • Enhanced analysis capabilities through machine learning algorithms
+        </p>
+        <a href="https://github.com/eliza2s/Volleyball-Highlight-Generation" class="project-github-link" target="_blank">View on GitHub</a>
+      </div>
     </div>
   </main>
   <script src="script.js"></script>
