@@ -394,27 +394,54 @@
           <div class="experience-item">
             <div class="exp-header">
               <h4>STEAM EDUCATOR</h4>
-              <span class="exp-org">Smart Cheli</span>
+              <a href="https://smartcheli.org.np/" target="_blank" class="exp-org-link">Smart Cheli</a>
             </div>
             <p class="exp-dates">Nov 2025 – Present</p>
+            <div class="exp-details" style="display: none;">
+              <ul>
+                <li>Delivered engaging STEAM sessions through interactive learning activities</li>
+                <li>Taught computational thinking and Scratch programming concepts</li>
+                <li>Guided students in creating games, animations, and creative projects</li>
+                <li>Supported analytical thinking, logical reasoning, and problem-solving skills</li>
+              </ul>
+            </div>
+            <button class="exp-toggle-btn">Read More</button>
           </div>
           <div class="experience-item">
             <div class="exp-header">
               <h4>COESIS</h4>
-              <span class="exp-org">Sagarmatha Engineering College</span>
+              <a href="https://www.facebook.com/coesis.np/" target="_blank" class="exp-org-link">Sagarmatha Engineering College</a>
             </div>
             <div class="exp-roles">
               <p>Public Relations Coordinator (Nov 2024 – Dec 2025)</p>
               <p>Vice-President (Nov 2023 – Nov 2024)</p>
               <p>Executive Member(Jun 2022 – Nov 2023)</p>
             </div>
+            <div class="exp-details" style="display: none;">
+              <ul>
+                <li>Contributed to technical and organizational activities within the Computer Engineering Society</li>
+                <li>Assisted in workshops, competitions, and student engagement programs</li>
+                <li>Collaborated with teams to support event coordination and technical initiatives</li>
+                <li>Promoted practical learning and peer collaboration among students</li>
+              </ul>
+            </div>
+            <button class="exp-toggle-btn">Read More</button>
           </div>
           <div class="experience-item">
             <div class="exp-header">
               <h4>Organizing Committee SECRETARY</h4>
-              <span class="exp-org">Sagarmatha Tech-Fest 2023</span>
+              <a href="https://www.facebook.com/sagarmathatechfest/" target="_blank" class="exp-org-link">Sagarmatha Tech-Fest 2023</a>
             </div>
             <p class="exp-dates">Jun 2023 – Dec 2023</p>
+            <div class="exp-details" style="display: none;">
+              <ul>
+                <li>Coordinated logistics and communication for a national-level technical festival</li>
+                <li>Supported organization of Hackathon, Project Exhibition, and Competitive Programming events</li>
+                <li>Managed coordination among organizing teams for smooth event execution</li>
+                <li>Strengthened leadership, teamwork, and event management skills</li>
+              </ul>
+            </div>
+            <button class="exp-toggle-btn">Read More</button>
           </div>
         </div>
       </section>
@@ -466,6 +493,24 @@
 
     // Show home page by default
     showPage('home');
+
+    // Experience toggle functionality
+    const toggleButtons = document.querySelectorAll('.exp-toggle-btn');
+    
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const details = this.previousElementSibling;
+        const isShowing = details.classList.contains('show');
+        
+        if (isShowing) {
+          details.classList.remove('show');
+          this.textContent = 'Read More';
+        } else {
+          details.classList.add('show');
+          this.textContent = 'Show Less';
+        }
+      });
+    });
   </script>
   <script src="script.js"></script>
 </body>

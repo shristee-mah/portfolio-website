@@ -103,15 +103,27 @@
       <ul class="certification-list">
         <li>
           <span class="cert-bullet">■</span>
+          <a href="#" class="cert-link">Intermediate Machine Learning</a>
+          <span class="cert-provider">Kaggle</span>
+          <a href="https://www.kaggle.com/learn/certification/shristeemaharja/intermediate-machine-learning" class="cert-view">Visit certificate</a>
+        </li>
+        <li>
+          <span class="cert-bullet">■</span>
+          <a href="#" class="cert-link">Intro to Machine Learning</a>
+          <span class="cert-provider">Kaggle</span>
+          <a href="https://www.kaggle.com/learn/certification/shristeemaharja/intro-to-machine-learning" class="cert-view">Visit certificate</a>
+        </li>
+        <li>
+          <span class="cert-bullet">■</span>
           <a href="#" class="cert-link">Data Visualization</a>
           <span class="cert-provider">Kaggle</span>
-          <a href="#" class="cert-view">Visit certificate</a>
+          <a href="https://www.kaggle.com/learn/certification/shristeemaharja/data-visualization" class="cert-view">Visit certificate</a>
         </li>
         <li>
           <span class="cert-bullet">■</span>
           <a href="#" class="cert-link">Intro to Deep Learning</a>
           <span class="cert-provider">Kaggle</span>
-          <a href="#" class="cert-view">Visit certificate</a>
+          <a href="https://www.kaggle.com/learn/certification/shristeemaharja/intro-to-deep-learning" class="cert-view">Visit certificate</a>
         </li>
         <li>
           <span class="cert-bullet">■</span>
@@ -125,39 +137,117 @@
     <div class="section-divider"></div>
 
     <section class="experience">
-      <h3 class="section-title">
-        <img src="images/work.png" alt="Work icon" class="section-icon" style="height:1em; width:auto; vertical-align:middle;">
-        Experience
-      </h3>
-      <div class="experience-list">
-        <div class="experience-item">
-          <div class="exp-header">
-            <h4>STEAM EDUCATOR</h4>
-            <span class="exp-org">Smart Cheli</span>
-          </div>
-          <p class="exp-dates">Nov 2025 – Present</p>
-        </div>
-        <div class="experience-item">
-          <div class="exp-header">
-            <h4>COESIS</h4>
-            <span class="exp-org">Sagarmatha Engineering College</span>
-          </div>
-          <div class="exp-roles">
-            <p>Public Relations Coordinator (Nov 2024 – Dec 2025)</p>
-            <p>Vice-President (Nov 2023 – Nov 2024)</p>
-            <p>Executive Member (Jun 2022 – Nov 2023)</p>
-          </div>
-        </div>
-        <div class="experience-item">
-          <div class="exp-header">
-            <h4>OC SECRETARY</h4>
-            <span class="exp-org">Sagarmatha Tech-Fest 2023</span>
-          </div>
-          <p class="exp-dates">Jun 2023 – Dec 2023</p>
-        </div>
+  <h3 class="section-title">
+    <img src="images/work.png" alt="Work icon" class="section-icon" style="height:1em; width:auto; vertical-align:middle;">
+    Experience
+  </h3>
+
+  <div class="experience-list">
+
+    <!-- Smart Cheli -->
+    <div class="experience-item">
+      <div class="exp-header">
+        <h4>STEAM EDUCATOR</h4>
+
+        <a href="https://smartcheli.org.np/"
+           target="_blank"
+           class="exp-org">
+           Smart Cheli ↗
+        </a>
       </div>
-    </section>
+
+      <p class="exp-dates">Nov 2025 – Present</p>
+
+      <button class="exp-toggle-btn">Read More</button>
+
+      <div class="exp-details">
+        <ul>
+          <li>Delivered engaging STEAM sessions through interactive learning activities.</li>
+          <li>Taught computational thinking and Scratch programming concepts.</li>
+          <li>Guided students in creating games, animations, and creative projects.</li>
+          <li>Supported analytical thinking, logical reasoning, and problem-solving skills.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- COESIS -->
+    <div class="experience-item">
+      <div class="exp-header">
+        <h4>COESIS</h4>
+
+        <a href="https://www.facebook.com/coesis.np/"
+           target="_blank"
+           class="exp-org">
+           Sagarmatha Engineering College ↗
+        </a>
+      </div>
+
+      <div class="exp-roles">
+        <p>Public Relations Coordinator (Nov 2024 – Dec 2025)</p>
+        <p>Vice-President (Nov 2023 – Nov 2024)</p>
+        <p>Executive Member (Jun 2022 – Nov 2023)</p>
+      </div>
+
+      <button class="exp-toggle-btn">Read More</button>
+
+      <div class="exp-details">
+        <ul>
+          <li>Contributed to technical and organizational activities within the Computer Engineering Society.</li>
+          <li>Assisted in workshops, competitions, and student engagement programs.</li>
+          <li>Collaborated with teams to support event coordination and technical initiatives.</li>
+          <li>Promoted practical learning and peer collaboration among students.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tech Fest -->
+    <div class="experience-item">
+      <div class="exp-header">
+        <h4>OC SECRETARY</h4>
+
+        <a href="https://www.facebook.com/sagarmathatechfest/"
+           target="_blank"
+           class="exp-org">
+           Sagarmatha Tech-Fest 2023 ↗
+        </a>
+      </div>
+
+      <p class="exp-dates">Jun 2023 – Dec 2023</p>
+
+      <button class="exp-toggle-btn">Read More</button>
+
+      <div class="exp-details">
+        <ul>
+          <li>Coordinated logistics and communication for a national-level technical festival.</li>
+          <li>Supported organization of Hackathon, Project Exhibition, and Competitive Programming events.</li>
+          <li>Managed coordination among organizing teams for smooth event execution.</li>
+          <li>Strengthened leadership, teamwork, and event management skills.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  </section>
   </main>
+  <script>
+    // Experience toggle functionality
+    const toggleButtons = document.querySelectorAll('.exp-toggle-btn');
+    
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const details = this.nextElementSibling;
+        const isShowing = details.classList.contains('show');
+        
+        if (isShowing) {
+          details.classList.remove('show');
+          this.textContent = 'Read More';
+        } else {
+          details.classList.add('show');
+          this.textContent = 'Show Less';
+        }
+      });
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
