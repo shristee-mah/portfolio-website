@@ -287,3 +287,75 @@ menuOverlay.addEventListener('click', () => {
   preventBodyScroll(false); // Allow scroll when closing via overlay
 });
 
+// ============================================================================
+// Theme Toggle Functionality
+// ============================================================================
+
+const themeToggleBtn = document.getElementById('themeToggle');
+const themeToggleSidebar = document.getElementById('themeToggleSidebar');
+const themeIcons = document.querySelectorAll('.theme-icon');
+
+/**
+ * Initialize theme on page load
+ * Checks localStorage for saved theme preference and applies it
+ */
+function initializeTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  
+  // Use saved theme if available, otherwise default to light theme
+  if (savedTheme === 'light' || !savedTheme) {
+    setLightTheme();
+  } else {
+    setDarkTheme();
+  }
+}
+
+/**
+ * Set light theme
+ * Updates data-theme attribute and icon source
+ */
+function setLightTheme() {
+  document.documentElement.setAttribute('data-theme', 'light');
+  themeIcons.forEach(icon => {
+    icon.src = 'images/dark-icon.png';
+    icon.alt = 'Switch to dark theme';
+  });
+  localStorage.setItem('theme', 'light');
+}
+
+/**
+ * Set dark theme
+ * Updates data-theme attribute and icon source
+ */
+function setDarkTheme() {
+  document.documentElement.removeAttribute('data-theme');
+  themeIcons.forEach(icon => {
+    icon.src = 'images/light-icon.png';
+    icon.alt = 'Switch to light theme';
+  });
+  localStorage.setItem('theme', 'dark');
+}
+
+/**
+ * Toggle between light and dark themes
+ */
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  if (currentTheme === 'light') {
+    setDarkTheme();
+  } else {
+    setLightTheme();
+  }
+}
+
+// Initialize theme when DOM is loaded
+document.addEventListener('DOMContentLoaded', initializeTheme);
+
+// Add click event listeners to both theme toggle buttons
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', toggleTheme);
+}
+
+if (themeToggleSidebar) {
+  themeToggleSidebar.addEventListener('click', toggleTheme);
+}
